@@ -30,7 +30,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
-`.foreach` will execute a provided function once per array element but doesn't return anything, anything that's returned is discarded. `.map` will similarlry execute a provided function on every element in an array but it will capture and build a new array with the new values 
+`.foreach` will execute a provided function once per array element but doesn't return anything, anything that's returned is discarded. `.map` will similarly execute a provided function on every element in an array but it will capture and build a new array with the new values 
 
 2. What is the difference between a function and a method?
 
@@ -39,7 +39,7 @@ A method is a function on an object whilst a function is independent of an objec
 
 3. What is closure?
 
-Closures are created everytime a function is created. A closure is a function enclosed with references to its it's surrounding lexical environment. It gives you access to an outer fuinctions scope from an inner function.
+Closures are created everytime a function is created. A closure is a function enclosed with references to its surrounding lexical environment. It gives you access to an outer fuinctions scope from an inner function.
 
 4. Describe the four rules of the 'this' keyword.
 
@@ -49,6 +49,7 @@ Closures are created everytime a function is created. A closure is a function en
         4. Is the function called in the global scope?
 
 5. Why do we need super() in an extended class?
+
 In an extended class we're given access to properties and methods present in the other class or parent class. In order to invoke the parent class  before using the child class we need to use the super method.
 
 
