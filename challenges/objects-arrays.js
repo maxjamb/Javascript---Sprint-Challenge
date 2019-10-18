@@ -63,11 +63,7 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = [];
-let universitiesSorted = [];
-  for (let i = 0; i< graduates.length; i++)
-  universities.push(graduates[i].university);
-universitiesSorted = universities.sort();
-console.log(universitiesSorted);
+
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student.
 
@@ -77,19 +73,10 @@ Name email@example.com
 Log the result of your new array. */
 
 const contactInfo = [];
-  for (let i = 0; i< graduates.length; i++)
-  contactInfo.push(`${graduates[i].first_name} ${graduates[i].email}`)
-console.log(contactInfo);
-
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 
 const uni = [];
-  for (let i = 0; i< graduates.length; i++)
-  if(graduates[i].university.includes("Uni"))
-  uni.push(graduates[i].university)
-console.log(uni.length);
-
 
 // ==== ADVANCED Array Methods ====
 
@@ -114,9 +101,7 @@ The zoo wants to display both the scientific name and the animal name in front o
 */
 
 const animalNames = [];
-zooAnimals.forEach(names => {
-  animalNames.push(`Name: ${names.animal_name}, ${names.scientific_name}`);
-});
+
 console.log(animalNames);
 
 /* Request 2: .map()    
@@ -125,7 +110,7 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 
 */
 
-const lowerCase = zooAnimals.map(item => item.animal_name.toLowerCase());
+const lowerCase = []
 
 console.log(lowerCase);
 
@@ -135,7 +120,7 @@ The zoos are concenred about animals with a lower population count. Find out whi
 
 */
 
-const lowerPopulation = zooAnimals.filter(size => size.population < 5); 
+const lowerPopulation = [] 
 
 console.log(lowerPopulation);
 
@@ -145,7 +130,7 @@ The zoos need to know their total animal population across the United States.  F
 
 */
 
-const populationTotal = zooAnimals.reduce((sum, animal) => sum + animal.population, 0,);
+const populationTotal = []
 
 console.log(populationTotal);
 

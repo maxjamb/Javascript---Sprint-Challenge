@@ -7,10 +7,7 @@
   * In the body of the function return the callback with the two parameters that you created
 */
 
-const consume = function(x, y, cb){
-  return cb, x, y;
-  return cb(x, y);
-}
+
 
 
 
@@ -20,20 +17,6 @@ const consume = function(x, y, cb){
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
- function add(a, b){
-  cb(a+b);
-  return a+b
-}
-
-function multiply(a, b){
-  cb(a*b);
-  return a*b
-}
-
-function greeting(a, b){
-  cb(`Hello + ${x} + " " +${y} ,nice to meet you!`);
-  return(`Hello + ${x} + " " +${y} ,nice to meet you!`);
-}
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 consume(2,2,add); // 4
