@@ -8,10 +8,8 @@
 */
 
 const consume = function(x, y, cb){
-  return cb, x, y;
   return cb(x, y);
 }
-
 
 
 /* Step 2: Create several functions to callback with consume();
@@ -20,18 +18,15 @@ const consume = function(x, y, cb){
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
- function add(a, b){
-  cb(a+b);
-  return a+b
+ function add(num1, num2){
+  return num1+num2;
 }
 
-function multiply(a, b){
-  cb(a*b);
-  return a*b
+function multiply(num1, num2){
+  return num1*num2;
 }
 
-function greeting(a, b){
-  cb(`Hello + ${x} + " " +${y} ,nice to meet you!`);
+function greeting(x, y){
   return(`Hello + ${x} + " " +${y} ,nice to meet you!`);
 }
 
@@ -46,7 +41,8 @@ consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
 // Explanation: 
-// nestedFunction can accesss the variable 'internal' because it was declared within the scope of myfunction(). 
+// nestedFunction can accesss the variable 'internal' because it was declared within the scope of myfunction(), 
+//even when it exits it's variables are still accessible to the function delcared within that scope
 
 const external = "I'm outside the function";
 
